@@ -1,6 +1,6 @@
 # airbnb-clone-project
 
-#Project Overview
+# Project Overview
 
 Airbnb Clone is a full-stack web application inspired by the popular booking platform, Airbnb. This project simulates a real-world software development workflow, focusing on core aspects of backend development, database architecture, API design, and CI/CD integration. Built with a focus on scalability, security, and collaborative development, it provides a comprehensive learning experience for aspiring developers.
 
@@ -76,7 +76,7 @@ API Security Tools
 
 Includes authentication (e.g., JWT) and authorization mechanisms to protect endpoints, secure data transactions, and ensure safe access control within the application.
 
-#Database Design
+# Database Design
 
 The database for the Airbnb Clone project is designed with normalization and scalability in mind. It captures key relationships between users, properties, bookings, payments, and reviews to mirror a real-world booking platform.
 
@@ -200,7 +200,7 @@ One Booking → one Payment
 
 One User can review multiple Properties, but only once per booking
 
-#Feature Breakdown
+# Feature Breakdown
 
 1. User Management
 This feature enables secure user registration, authentication, and profile management. It ensures that users can create accounts, log in, and maintain personal profiles, forming the foundation for personalized interactions within the platform.
@@ -223,35 +223,66 @@ The backend is well-documented using the OpenAPI standard, allowing developers t
 7. Database Optimizations
 Indexes and caching strategies are implemented to improve query performance and reduce server load. This ensures that the system remains responsive and scalable as data grows.
 
-#API Security
+# API Security
+
 Ensuring the security of backend APIs is essential to protect sensitive data, maintain system integrity, and build user trust. The following key security measures will be implemented in the Airbnb Clone project:
 
 1. Authentication
+   
 Authentication ensures that only registered users can access protected endpoints. Using secure methods like JWT (JSON Web Tokens) or session-based authentication, we validate user identity before granting access to critical features like bookings, payments, and profile management.
 
 Why it matters: Prevents unauthorized access to user accounts and protects personal data from being exposed.
 
 2. Authorization
+   
 Authorization restricts access to resources based on user roles and permissions. For instance, only the host who listed a property should be able to update or delete it, and users should only be able to manage their own bookings.
 
 Why it matters: Ensures users can only perform actions on resources they own or are allowed to access, thereby reducing the risk of privilege escalation.
 
 3. Rate Limiting
+   
 Rate limiting controls the number of API requests a client can make within a specific timeframe. This prevents abuse such as brute force attacks and helps maintain server performance under high traffic.
 
 Why it matters: Protects the platform from spam, abuse, and denial-of-service (DoS) attacks.
 
 4. Data Validation & Sanitization
+   
 Input data is validated and sanitized before processing. This prevents injection attacks such as SQL injection and cross-site scripting (XSS).
 
 Why it matters: Keeps the system safe from malicious input that could compromise data or application logic.
 
 5. Secure Payment Handling
+   
 All payment-related data is transmitted over HTTPS and processed using secure, PCI-compliant payment gateways. Sensitive details like card numbers are never stored on the server.
 
 Why it matters: Safeguards financial information and ensures compliance with payment security standards.
 
 6. HTTPS and Secure Headers
+   
 All communications between the client and server are encrypted using HTTPS. Security headers like Content-Security-Policy and Strict-Transport-Security are also applied to minimize attack vectors.
 
 Why it matters: Prevents eavesdropping, man-in-the-middle attacks, and other network-level threats.
+
+# CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines are automated workflows that help streamline the development process by ensuring code changes are tested, integrated, and deployed efficiently and reliably. They reduce human error, accelerate development cycles, and ensure that new features and bug fixes are delivered quickly and safely to users.
+
+Why CI/CD is Important for This Project
+
+Ensures Code Quality: Automated tests catch bugs before they reach production, preserving system integrity.
+
+Speeds Up Deployment: New features and fixes can be deployed continuously without manual intervention.
+
+Enables Collaboration: Multiple developers can work on different parts of the project without causing integration issues.
+
+Tools Used
+
+GitHub Actions: Automates testing and deployment whenever new code is pushed to the repository.
+
+Docker: Ensures consistent runtime environments across development, testing, and production stages.
+
+Celery + Redis: Supports asynchronous background task execution, integrated into the pipeline for tasks like email notifications or long-running jobs.
+
+PostgreSQL: Used in testing stages for realistic database interactions.
+
+By implementing a robust CI/CD pipeline, this project maintains a fast, safe, and repeatable process for shipping code from development to production.
