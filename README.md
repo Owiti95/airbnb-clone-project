@@ -222,3 +222,36 @@ The backend is well-documented using the OpenAPI standard, allowing developers t
 
 7. Database Optimizations
 Indexes and caching strategies are implemented to improve query performance and reduce server load. This ensures that the system remains responsive and scalable as data grows.
+
+#API Security
+Ensuring the security of backend APIs is essential to protect sensitive data, maintain system integrity, and build user trust. The following key security measures will be implemented in the Airbnb Clone project:
+
+1. Authentication
+Authentication ensures that only registered users can access protected endpoints. Using secure methods like JWT (JSON Web Tokens) or session-based authentication, we validate user identity before granting access to critical features like bookings, payments, and profile management.
+
+Why it matters: Prevents unauthorized access to user accounts and protects personal data from being exposed.
+
+2. Authorization
+Authorization restricts access to resources based on user roles and permissions. For instance, only the host who listed a property should be able to update or delete it, and users should only be able to manage their own bookings.
+
+Why it matters: Ensures users can only perform actions on resources they own or are allowed to access, thereby reducing the risk of privilege escalation.
+
+3. Rate Limiting
+Rate limiting controls the number of API requests a client can make within a specific timeframe. This prevents abuse such as brute force attacks and helps maintain server performance under high traffic.
+
+Why it matters: Protects the platform from spam, abuse, and denial-of-service (DoS) attacks.
+
+4. Data Validation & Sanitization
+Input data is validated and sanitized before processing. This prevents injection attacks such as SQL injection and cross-site scripting (XSS).
+
+Why it matters: Keeps the system safe from malicious input that could compromise data or application logic.
+
+5. Secure Payment Handling
+All payment-related data is transmitted over HTTPS and processed using secure, PCI-compliant payment gateways. Sensitive details like card numbers are never stored on the server.
+
+Why it matters: Safeguards financial information and ensures compliance with payment security standards.
+
+6. HTTPS and Secure Headers
+All communications between the client and server are encrypted using HTTPS. Security headers like Content-Security-Policy and Strict-Transport-Security are also applied to minimize attack vectors.
+
+Why it matters: Prevents eavesdropping, man-in-the-middle attacks, and other network-level threats.
