@@ -1,9 +1,11 @@
 # airbnb-clone-project
 
-Project Overview
+#Project Overview
+
 Airbnb Clone is a full-stack web application inspired by the popular booking platform, Airbnb. This project simulates a real-world software development workflow, focusing on core aspects of backend development, database architecture, API design, and CI/CD integration. Built with a focus on scalability, security, and collaborative development, it provides a comprehensive learning experience for aspiring developers.
 
 Project Goals
+
 Recreate key functionalities of Airbnb, such as user authentication, property listings, and booking systems.
 
 Practice collaborative software development using GitHub.
@@ -14,7 +16,8 @@ Design and document scalable, relational databases reflecting real-world use cas
 
 Integrate modern technologies to create a cohesive, production-ready application.
 
-Tech Stack
+#Tech Stack
+
 Backend Framework: Django
 
 Database: MySQL
@@ -73,7 +76,7 @@ API Security Tools
 
 Includes authentication (e.g., JWT) and authorization mechanisms to protect endpoints, secure data transactions, and ensure safe access control within the application.
 
-Database Design
+#Database Design
 
 The database for the Airbnb Clone project is designed with normalization and scalability in mind. It captures key relationships between users, properties, bookings, payments, and reviews to mirror a real-world booking platform.
 
@@ -196,3 +199,26 @@ One Property → many Bookings, Reviews
 One Booking → one Payment
 
 One User can review multiple Properties, but only once per booking
+
+#Feature Breakdown
+
+1. User Management
+This feature enables secure user registration, authentication, and profile management. It ensures that users can create accounts, log in, and maintain personal profiles, forming the foundation for personalized interactions within the platform.
+
+2. Property Management
+Hosts can list new properties, update listing information, and remove properties when needed. This feature supports full CRUD operations, enabling seamless management of rental units and contributing to a diverse marketplace.
+
+3. Booking System
+Users can make reservations, view booking details, and manage check-ins and check-outs. This system ensures that booking flows are smooth, accurate, and reflect real-time availability.
+
+4. Payment Processing
+Handles transactions related to property bookings, including payment initiation and confirmation. This feature ensures secure and reliable payment flow, which is crucial for trust and operational continuity.
+
+5. Review System
+Enables users to leave reviews and rate properties they have stayed in. Reviews foster trust in the community and help maintain quality standards across the platform.
+
+6. API Documentation
+The backend is well-documented using the OpenAPI standard, allowing developers to easily integrate with the system. It includes both REST and GraphQL APIs for flexibility and comprehensive access to resources.
+
+7. Database Optimizations
+Indexes and caching strategies are implemented to improve query performance and reduce server load. This ensures that the system remains responsive and scalable as data grows.
