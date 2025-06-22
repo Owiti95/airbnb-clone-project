@@ -72,3 +72,127 @@ A CI/CD automation platform used to build, test, and deploy the application auto
 API Security Tools
 
 Includes authentication (e.g., JWT) and authorization mechanisms to protect endpoints, secure data transactions, and ensure safe access control within the application.
+
+Database Design
+
+The database for the Airbnb Clone project is designed with normalization and scalability in mind. It captures key relationships between users, properties, bookings, payments, and reviews to mirror a real-world booking platform.
+
+Users
+
+Represents individuals using the platform (hosts and guests).
+
+Key Fields:
+
+id: Unique identifier for each user
+
+name: Full name of the user
+
+email: User’s email address (used for login)
+
+password_hash: Hashed password for secure authentication
+
+is_host: Boolean indicating if the user is a property owner
+
+Relationships:
+
+A user can create multiple properties (if is_host is True)
+
+A user can make multiple bookings
+
+A user can leave multiple reviews
+
+Properties
+
+Represents listings available for booking.
+
+Key Fields:
+
+id: Unique identifier for each property
+
+title: Name or title of the property
+
+description: Detailed description of the property
+
+price_per_night: Cost per night
+
+host_id: Foreign key referencing the Users table
+
+Relationships:
+
+A property is owned by one user (host)
+
+A property can have many bookings
+
+A property can receive many reviews
+
+Bookings
+
+Tracks reservations made by users.
+
+Key Fields:
+
+id: Unique identifier for each booking
+
+property_id: Foreign key referencing the Properties table
+
+user_id: Foreign key referencing the Users table
+
+check_in: Start date of booking
+
+check_out: End date of booking
+
+Relationships:
+
+A booking belongs to one user and one property
+
+A booking may be linked to one payment
+
+Payments
+
+Handles financial transactions related to bookings.
+
+Key Fields:
+
+id: Unique identifier for each payment
+
+booking_id: Foreign key referencing the Bookings table
+
+amount: Total payment amount
+
+payment_status: Status (e.g., “completed”, “pending”)
+
+payment_date: Timestamp of payment
+
+Relationships:
+
+Each payment is linked to a single booking
+
+Reviews
+
+Captures user feedback on properties.
+
+Key Fields:
+
+id: Unique identifier for each review
+
+user_id: Foreign key referencing the Users table
+
+property_id: Foreign key referencing the Properties table
+
+rating: Numeric rating (e.g., 1–5)
+
+comment: Written feedback
+
+Relationships:
+
+Each review is associated with one user and one property
+
+Entity Relationships Summary
+
+One User → many Properties, Bookings, Reviews
+
+One Property → many Bookings, Reviews
+
+One Booking → one Payment
+
+One User can review multiple Properties, but only once per booking
