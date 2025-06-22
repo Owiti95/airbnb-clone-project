@@ -362,3 +362,51 @@ QA/Testers	Write test cases for both frontend and backend, perform functional an
 DevOps Engineers	Set up and maintain the CI/CD pipelines, manage server infrastructure, monitor performance, and automate deployments using tools like Docker and GitHub Actions.
 
 Scrum Master	Facilitates daily stand-ups, sprint planning, reviews, and retrospectives. Removes roadblocks, encourages agile best practices, and keeps the team focused and collaborative.
+
+# UI Component Patterns
+
+A well-structured UI is built on reusable components that ensure consistency, scalability, and maintainability. Below is an overview of the planned UI components for the StayEase Airbnb Clone project:
+
+Navbar
+
+The Navbar is the main navigation bar visible on all pages. It will include:
+
+Logo: Brand identity element linking back to the homepage.
+
+Search Bar: Allows users to quickly find properties by location or filters.
+
+User Navigation: Access to login, profile, and bookings.
+
+Responsive Menu: Mobile-friendly dropdown menu or sidebar.
+
+Property Card
+
+The Property Card will be the core unit in the Property Listing View and includes:
+
+Property Image: Displays the main image of the property.
+
+Basic Details: Shows title, location, nightly price, and star rating.
+
+Favorite Button: Users can mark a property as a favorite.
+
+Responsive Layout: Adapts to different screen sizes for accessibility and usability.
+
+Footer
+
+The Footer appears at the bottom of each page and will contain:
+
+Site Links: Navigation to about, help, terms, and privacy pages.
+
+Company Info: Brief description or copyright.
+
+Social Media Icons: Links to StayEase's presence on platforms like Twitter, Instagram, and Facebook.
+
+Additional Planned Components
+
+Property Detail Section: Large display of images, description, amenities, and host info.
+
+Booking Form: Simple form for selecting check-in/out dates and number of guests.
+
+Modal Components: For login/signup or confirmations.
+
+Rating & Review Widget: Star-based rating input and review comment display.
