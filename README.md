@@ -342,3 +342,23 @@ Primary Font: Circular, Medium (500), 16px
 Headings: Circular, Bold (700), 24px–32px
 
 Secondary Text: Circular, Book (400), 14px
+
+# Project Roles and Responsibilities
+
+To ensure smooth execution of the StayEase Airbnb Clone project, the team is organized into distinct roles. Each role contributes to the project’s success by focusing on specific responsibilities within the development lifecycle.
+
+Role	Responsibilities
+
+Project Manager	Oversees the entire project timeline, coordinates communication across teams, allocates resources, and ensures timely delivery of milestones. Acts as the central point of contact and resolves escalations.
+
+Frontend Developers	Implement the user interface using HTML, CSS, and JavaScript frameworks (e.g., React). Responsible for responsive design, accessibility, integrating APIs, and building reusable UI components.
+
+Backend Developers	Build and maintain the REST and GraphQL APIs, design database schemas, and implement core business logic. Ensure secure authentication, authorization, and manage data flow between frontend and backend.
+
+Designers	Create wireframes and high-fidelity mockups in Figma, define the visual design system (colors, typography, layout), and ensure the user experience is intuitive and aligned with branding goals.
+
+QA/Testers	Write test cases for both frontend and backend, perform functional and regression testing, identify bugs, and ensure the app meets quality standards before deployment.
+
+DevOps Engineers	Set up and maintain the CI/CD pipelines, manage server infrastructure, monitor performance, and automate deployments using tools like Docker and GitHub Actions.
+
+Scrum Master	Facilitates daily stand-ups, sprint planning, reviews, and retrospectives. Removes roadblocks, encourages agile best practices, and keeps the team focused and collaborative.
