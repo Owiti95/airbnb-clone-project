@@ -286,3 +286,59 @@ Celery + Redis: Supports asynchronous background task execution, integrated into
 PostgreSQL: Used in testing stages for realistic database interactions.
 
 By implementing a robust CI/CD pipeline, this project maintains a fast, safe, and repeatable process for shipping code from development to production.
+
+
+# UI/UX Design Planning
+
+Design Goals
+Create an intuitive booking flow: Ensure that users can easily search, explore, and book properties with minimal steps.
+
+Maintain visual consistency: Follow a unified design system to promote brand trust and a clean look.
+
+Ensure fast loading times: Optimize assets and code for a responsive, smooth experience.
+
+Prioritize mobile responsiveness: Implement a mobile-first approach to support all screen sizes and devices.
+
+Key Features
+
+Property Search and Filtering: Allow users to quickly find properties using filters like location, price, and type.
+
+Detailed Property Viewing: Present comprehensive information and visuals about each property.
+
+Secure Checkout Process: Guide users through a seamless and trustworthy booking flow.
+
+User Authentication: Enable secure login and signup flows for both guests and hosts.
+
+Primary Pages
+
+Page Name	Description
+
+Property Listing View	Grid layout showing all available properties with filters for location, price, and more.
+Listing Detailed View	Full details of a selected property including images, amenities, reviews, and a booking form.
+Simple Checkout View	A minimalistic page where users can enter payment details and confirm their booking.
+
+Importance of a User-Friendly Design
+
+A user-friendly interface is essential in a booking system to reduce friction and guide users smoothly through the journey—from discovering a property to completing a reservation. Good UI/UX improves conversion rates, builds user trust, and enhances customer satisfaction, especially in a competitive accommodation marketplace.
+
+Figma Design Specifications
+
+Color Scheme:
+
+Primary: #FF5A5F
+
+Secondary: #008489
+
+Background: #FFFFFF
+
+Primary Text: #222222
+
+Secondary Text: #717171
+
+Typography:
+
+Primary Font: Circular, Medium (500), 16px
+
+Headings: Circular, Bold (700), 24px–32px
+
+Secondary Text: Circular, Book (400), 14px
